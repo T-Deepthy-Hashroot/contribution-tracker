@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React from 'react';
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
 import RaisedButton from 'material-ui/RaisedButton';
 
@@ -9,7 +9,7 @@ const style = {
   margin: 15,
 };
 
-class Loginscreen extends Component {
+class Loginscreen extends React.Component {
   constructor(props){
     super(props);
     var loginButtons=[];
@@ -71,7 +71,7 @@ class Loginscreen extends Component {
         <div>
         <MuiThemeProvider>
           <div>
-             <RaisedButton label={"Sign Up"} primary={true} style={style} onClick={(event) => this.handleClick(event,'student')}/>
+             <RaisedButton label={"Sign Up"} primary={true} style={style} onClick={(event) => this.handleClick(event,'user')}/>
          </div>
          </MuiThemeProvider>
         
